@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+@model StudentInformation
+
+
+<form asp-controller="RegisterInfo" asp-action="create" method="post">
+            <div class="form-group">
+                <label>Name</label>
+                <input asp-for="name" type="text" class="form-control"  placeholder="Name">
+            </div>
+                    <div class="form-group">
+                        <label>Middlename</label>
+                        <input asp-for="middlename" type="text" class="form-control"  placeholder="Middlename">
+                    </div>
+            <div class="form-group">
+                <label>Lastname</label>
+                <input asp-for="lastname" type="text" class="form-control"  placeholder="Lastname">
+            </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<form asp-controller="RegisterInfo" asp-action="GotoTable" method="post">
+    <input type="submit" value="table" />
+</form>
+
+
+<br>
+<br>
+<br>
+
+
+<form asp-controller="RegisterInfo" asp-action="logout">
+    <input type="submit" value="logout" />
+</form>

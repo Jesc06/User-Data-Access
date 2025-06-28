@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+@model List<StudentInformation>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Middlename</th>
+            <th scope="col">Lastname</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var list in Model)
+        {
+            <tr>
+                <td>@list.name</td>
+                <td>@list.middlename</td>
+                <td>@list.lastname</td>
+            </tr>
+        }
+    </tbody>
+</table>
